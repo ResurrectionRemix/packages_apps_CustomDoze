@@ -59,5 +59,4 @@
     <string name="footer_info">If Always on is enabled, brightness gets recalculated to follow
         hardware specifications, so don\'t consider above values as absolute ones.\n\nLong press on
         the left text value to set it manually.</string>
-
 </resources>

@@ -179,6 +179,7 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
             mPickUpPreference.setEnabled(!aodEnabled);
             mHandwavePreference.setEnabled(!aodEnabled);
             mPocketPreference.setEnabled(!aodEnabled);
+            mDozeOnChargePreference.setEnabled(!aodEnabled);
         }
 
         @Override

@@ -22,6 +22,7 @@
         <SwitchPreference
             android:key="always_on_ambient"
             android:defaultValue="false"
+            android:icon="@drawable/rr_aod_icon"
             android:title="@string/aod_setting_title"
             android:summary="@string/aod_setting_summary"/>
 
@@ -34,10 +35,19 @@
         <SwitchPreference
             android:key="ambient_display"
             android:defaultValue="true"
+            android:icon="@drawable/rr_ambient_icon"
             android:title="@string/ambient_display_notifications"
             android:summary="@string/ambient_display_summary" />
 
-        <!--com.msm.xtended.preferences.SystemSettingSwitchPreference
+      <com.rr.Preferences.SystemSettingSwitchPreference
+           android:key="doze_on_charge"
+           android:icon="@drawable/rr_charging_icon"
+           android:defaultValue="false"
+           android:title="@string/doze_on_charge_title"
+           android:summary="@string/doze_on_charge_summary" />
+
+
+        <!--com.rr.Preferences.SystemSettingSwitchPreference
             android:key="doze_trigger_doubletap"
             android:defaultValue="false"
             android:title="@string/doze_double_tap_title"
