@@ -70,6 +70,14 @@
         android:key="proximity_sensor"
         android:title="@string/proximity_sensor_title" >
 
+        <com.rr.Preferences.SystemSettingSwitchPreference
+            android:key="custom_ambient_raise_gesture"
+            android:defaultValue="false"
+            android:icon="@drawable/rr_lift_icon"
+            android:title="@string/wake_gesture_title"
+            android:summary="@string/wake_gesture_summary"
+            android:dependency="pick_up" />
+
         <SwitchPreference
             android:key="gesture_hand_wave"
             android:icon="@drawable/rr_wave_icon"
