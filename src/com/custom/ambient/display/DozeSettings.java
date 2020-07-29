@@ -28,7 +28,7 @@ import androidx.preference.SwitchPreference;
 import androidx.preference.PreferenceFragment;
 import android.view.MenuItem;
 
-import com.msm.xtended.preferences.SystemSettingSwitchPreference;
+import com.rr.Preferences.SystemSettingSwitchPreference;
 
 public class DozeSettings extends PreferenceActivity implements PreferenceFragment.OnPreferenceStartFragmentCallback {
 
@@ -97,17 +97,6 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
             mDozeOnChargePreference =
                 (SystemSettingSwitchPreference) findPreference(Utils.AOD_CHARGE_KEY);
 
-            mDoubleTapCategory =
-                (PreferenceCategory) findPreference(KEY_CATEGORY_DOUBLE_TAP);
-            mDoubleTapPreference =
-                (SystemSettingSwitchPreference) findPreference(Utils.DOUBLE_TAP_KEY);
-
-            if (Utils.isTapToWakeAvailable(mContext)) {
-                mDoubleTapPreference.setOnPreferenceChangeListener(this);
-            } else {
-                getPreferenceScreen().removePreference(mDoubleTapCategory);
-            }
-
             if (Utils.isAoDAvailable(mContext)) {
                 mAoDPreference.setChecked(Utils.isAoDEnabled(mContext));
                 mAoDPreference.setOnPreferenceChangeListener(this);
@@ -135,13 +124,6 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
                 (SwitchPreference) findPreference(Utils.GESTURE_POCKET_KEY);
             mPocketPreference.setChecked(Utils.pocketGestureEnabled(mContext));
             mPocketPreference.setOnPreferenceChangeListener(this);
-
-            mBrightnessLevels = (Preference) findPreference("doze_brightness");
-            if (mBrightnessLevels != null
-                    && !mContext.getResources().getBoolean(
-                            R.bool.hasDozeBrightnessSensor)) {
-                getPreferenceScreen().removePreference(mBrightnessLevels);
-            }
 
             mTiltCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_TILT_SENSOR);
             if (!getResources().getBoolean(R.bool.has_tilt_sensor)) {
@@ -187,12 +169,6 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
                 mPocketPreference.setChecked(value);
                 Utils.enablePocketMode(value, mContext);
                 return true;
-            } else if (Utils.DOUBLE_TAP_KEY.equals(key)) {
-                if (!Utils.isTapToWakeEnabled(mContext)); {
-                    Settings.Secure.putInt(mContext.getContentResolver(),
-                            Settings.Secure.DOUBLE_TAP_TO_WAKE, 1);
-                }
-                return true;
             }
             return false;
         }
@@ -203,8 +179,6 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
             mPickUpPreference.setEnabled(!aodEnabled);
             mHandwavePreference.setEnabled(!aodEnabled);
             mPocketPreference.setEnabled(!aodEnabled);
-            mDozeOnChargePreference.setEnabled(!aodEnabled);
-            mDoubleTapPreference.setEnabled(!aodEnabled);
         }
 
         @Override
@@ -233,3 +207,4 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
         return super.onOptionsItemSelected(item);
     }
 }
+

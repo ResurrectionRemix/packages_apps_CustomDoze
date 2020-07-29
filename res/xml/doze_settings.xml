@@ -23,13 +23,13 @@
             android:key="always_on_ambient"
             android:defaultValue="false"
             android:title="@string/aod_setting_title"
-            android:summary="@string/aod_setting_summary" />
+            android:summary="@string/aod_setting_summary"/>
 
-        <com.msm.xtended.preferences.SystemSettingSwitchPreference
+        <!--com.rr.Preferences.SystemSettingSwitchPreference
             android:key="doze_on_charge"
             android:defaultValue="false"
             android:title="@string/doze_on_charge_title"
-            android:summary="@string/doze_on_charge_summary" />
+            android:summary="@string/doze_on_charge_summary" /-->
 
         <SwitchPreference
             android:key="ambient_display"
@@ -37,11 +37,11 @@
             android:title="@string/ambient_display_notifications"
             android:summary="@string/ambient_display_summary" />
 
-        <com.msm.xtended.preferences.SystemSettingSwitchPreference
+        <!--com.msm.xtended.preferences.SystemSettingSwitchPreference
             android:key="doze_trigger_doubletap"
             android:defaultValue="false"
             android:title="@string/doze_double_tap_title"
-            android:summary="@string/doze_double_tap_summary" />
+            android:summary="@string/doze_double_tap_summary" /-->
 
     <PreferenceCategory
         android:key="tilt_sensor"
@@ -49,6 +49,7 @@
 
         <SwitchPreference
             android:key="pick_up"
+            android:icon="@drawable/rr_tilt_icon"
             android:defaultValue="false"
             android:title="@string/pick_up_title"
             android:summary="@string/pick_up_summary" />
@@ -61,18 +62,20 @@
 
         <SwitchPreference
             android:key="gesture_hand_wave"
+            android:icon="@drawable/rr_wave_icon"
             android:defaultValue="false"
             android:title="@string/hand_wave_gesture_title"
             android:summary="@string/hand_wave_gesture_summary" />
 
         <SwitchPreference
             android:key="gesture_pocket"
+            android:icon="@drawable/rr_pocket_icon"
             android:defaultValue="false"
             android:title="@string/pocket_gesture_title"
             android:summary="@string/pocket_gesture_summary" />
     </PreferenceCategory>
 
-    <Preference
+    <!--Preference
         android:key="doze_brightness"
         android:title="@string/doze_brightness_title"
         android:summary="@string/doze_brightness_summary">
@@ -80,7 +83,7 @@
         android:action="android.settings.APPLICATION_DETAILS_SETTINGS"
         android:targetPackage="com.custom.ambient.display"
         android:targetClass="com.custom.ambient.display.DozeBrightness" />
-    </Preference>
+    </Preference-->
 </PreferenceScreen>
 
 
