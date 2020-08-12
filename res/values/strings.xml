@@ -15,8 +15,8 @@
 
     <string name="ambient_display_title">Custom doze</string>
 
-    <string name="ambient_display_notifications">New notifications</string>
-    <string name="ambient_display_summary">Wake screen when you receive notifications</string>
+    <string name="ambient_display_notifications">Ambient display</string>
+    <string name="ambient_display_summary">Turn on regular ambient display</string>
 
     <!-- Tilt sensor -->
     <string name="tilt_sensor_title">Tilt sensor</string>
