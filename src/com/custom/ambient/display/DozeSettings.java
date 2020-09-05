@@ -133,8 +133,8 @@ public class DozeSettings extends PreferenceActivity implements PreferenceFragme
 
             mTiltCategory = (PreferenceCategory) findPreference(KEY_CATEGORY_TILT_SENSOR);
             if (!getResources().getBoolean(R.bool.has_tilt_sensor)) {
-                getPreferenceScreen().removePreference(mTiltCategory);
-                getPreferenceScreen().removePreference(mPickUpPreference);
+                mTiltCategory.setVisible(false);
+                mPickUpPreference.setVisible(false);
                 mRaiseToWakePreference.setVisible(false);
             }
 
