@@ -69,8 +69,10 @@ public final class Utils {
     }
 
     protected static boolean isAoDEnabled(Context context) {
+        boolean mAlwaysOnByDefault = context.getResources().getBoolean(
+            com.android.internal.R.bool.config_dozeAlwaysOnEnabled);
         return Settings.Secure.getInt(context.getContentResolver(),
-                Settings.Secure.DOZE_ALWAYS_ON, 0) != 0;
+                Settings.Secure.DOZE_ALWAYS_ON, mAlwaysOnByDefault ? 1 : 0) == 1;
     }
 
     protected static boolean isAoDAvailable(Context context) {

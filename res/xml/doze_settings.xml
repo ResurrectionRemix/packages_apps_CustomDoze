@@ -21,7 +21,7 @@
 		
         <SwitchPreference
             android:key="always_on_ambient"
-            android:defaultValue="false"
+            android:defaultValue="@*android:bool/config_dozeAlwaysOnEnabled" 
             android:icon="@drawable/rr_aod_icon"
             android:title="@string/aod_setting_title"
             android:summary="@string/aod_setting_summary"/>
