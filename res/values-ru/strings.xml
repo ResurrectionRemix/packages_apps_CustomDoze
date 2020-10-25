@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+    <string name="ambient_display_notifications">Ambient дисплей</string>
+    <string name="ambient_display_summary">Настройки поведения Ambient дисплея</string>
+
+    <!-- Tilt sensor -->
+    <string name="tilt_sensor_title">Датчик наклона</string>
+    <string name="pick_up_title">Поднимите, чтобы проверить телефон</string>
+    <string name="pick_up_summary">Пульсирующие уведомления при взятии устройства</string>
+
+    <string name="wake_gesture_title">Поднимите, чтобы разбудить</string>
+    <string name="wake_gesture_summary">Возьмите телефон, чтобы вывести устройство из спящего режима, а не пульсирующие уведомления</string>
+
+    <!-- Proximity sensor -->
+    <string name="proximity_sensor_title">Датчик приближения</string>
+    <string name="hand_wave_gesture_title">Взмах рукой</string>
+    <string name="hand_wave_gesture_summary">Уведомления на взмахе руки</string>
+    <string name="pocket_gesture_title">Карман</string>
+    <string name="pocket_gesture_summary">Пульсирующие уведомления при извлечении устройства из кармана</string>
+
+    <string name="aod_setting_title">Всегда включен</string>
+    <string name="aod_setting_summary">Показывать время, значки уведомлений и другую информацию. Увеличится расход батареи.</string>
+
+    <string name="doze_brightness_title">Яркость Ambient дисплея</string>
+    <string name="doze_brightness_summary">Настроить значения яркости окружающей среды</string>
+    <string name="night_brightness_value">Ночная яркость</string>
+    <string name="low_brightness_value">Низкая яркость</string>
+    <string name="high_brightness_value">Средняя яркость</string>
+    <string name="sun_brightness_value">Яркость солнечного света</string>
+
+    <string name="reset_hidden_apps">Сбросить все</string>
+
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Всегда включен при зарядке</string>
+    <string name="doze_on_charge_summary">Показывать экран Ambient все время при зарядке</string>
+
+    <!-- Doze on on DoubleTap -->
+    <string name="doze_double_tap_title">Нажмите дважды, чтобы проверить телефон</string>
+    <string name="doze_double_tap_summary">Пульсирующие уведомления при двойном касании по экрану</string>
+
+    <string name="edit_hint">Значение</string>
+    <string name="seek_value_edit_label">Установить значение</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Отменить</string>
+
+    <string name="footer_info">Если включен Ambient всегда, яркость пересчитывается, чтобы следовать
+        спецификации оборудования, поэтому не рассматривайте приведенные выше значения как абсолютные. Длительно нажимайте на
+        левое текстовое значение, чтобы установить его вручную.</string>
+</resources>
