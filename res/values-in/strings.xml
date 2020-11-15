@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2015 The CyanogenMod Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+
+    <string name="ambient_display_notifications">Tampilan ambien</string>
+    <string name="ambient_display_summary">Aktifkan tampilan ambien biasa</string>
+
+    <!-- Tilt sensor -->
+    <string name="tilt_sensor_title">Sensor kemiringan</string>
+    <string name="pick_up_title">Angkat untuk memeriksa telepon</string>
+    <string name="pick_up_summary">Notifikasi berdenyut saat perangkat diambil</string>
+
+    <string name="wake_gesture_title">Mengangkat untuk bangun</string>
+    <string name="wake_gesture_summary">Angkat telepon Anda untuk membangunkan perangkat alih-alih pemberitahuan yang berdenyut</string>
+
+    <!-- Proximity sensor -->
+    <string name="proximity_sensor_title">Sensor jarak</string>
+    <string name="hand_wave_gesture_title">Gelombang tangan</string>
+    <string name="hand_wave_gesture_summary">Notifikasi berdenyut saat melambai</string>
+    <string name="pocket_gesture_title">Saku</string>
+    <string name="pocket_gesture_summary">Pemberitahuan berdenyut saat dikeluarkan dari saku</string>
+
+    <string name="aod_setting_title">Selalu aktif</string>
+    <string name="aod_setting_summary">Tampilkan waktu, ikon notifikasi dan info lainnya. Meningkat
+        penggunaan baterai</string>
+
+    <string name="doze_brightness_title">Kecerahan ambien</string>
+    <string name="doze_brightness_summary">Konfigurasi nilai kecerahan ambien</string>
+    <string name="night_brightness_value">Kecerahan malam</string>
+    <string name="low_brightness_value">Kecerahan cahaya rendah</string>
+    <string name="high_brightness_value">Kecerahan cahaya sedang</string>
+    <string name="sun_brightness_value">Kecerahan cahaya matahari</string>
+
+    <string name="reset_hidden_apps">Setel ulang semua</string>
+
+    <!-- Doze on charge -->
+    <string name="doze_on_charge_title">Selalu aktif saat mengisi daya</string>
+    <string name="doze_on_charge_summary">Tampilkan layar ambien setiap saat saat mengisi daya</string>
+
+    <!-- Doze on on DoubleTap -->
+    <string name="doze_double_tap_title">Ketuk dua kali untuk memeriksa telepon</string>
+    <string name="doze_double_tap_summary">Notifikasi berdenyut dengan ketuk dua kali</string>
+
+    <string name="edit_hint">Nilai</string>
+    <string name="seek_value_edit_label">Tetapkan nilai</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Batalkan</string>
+
+    <string name="footer_info">Jika Selalu aktif diaktifkan, kecerahan akan dihitung ulang untuk diikuti
+        spesifikasi perangkat keras, jadi jangan anggap nilai di atas sebagai yang mutlak.\n\nTekan lama
+        nilai teks kiri untuk mengaturnya secara manual.</string>
+</resources>
